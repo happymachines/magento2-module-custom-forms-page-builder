@@ -1,0 +1,16 @@
+<div class="pagebuilder-content-type pagebuilder-custom-form" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false" css="{'pagebuilder-block-overlay': displayingPreview()}">
+    <div attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
+        <div if="displayingPreview" class="rendered-content no-pointer-events" html="data.main.html" afterRender="initializeWidgets"></div>
+        <div ifnot="displayingPreview" class="pagebuilder-placeholder">
+            <span class="placeholder-text" text="placeholderText"/>
+        </div>
+    </div>
+    <div data-role="spinner"
+         class="admin__data-grid-loading-mask"
+         if="loading">
+        <div class="spinner">
+            <span repeat="8"/>
+        </div>
+    </div>
+    <render args="getOptions().template" />
+</div>

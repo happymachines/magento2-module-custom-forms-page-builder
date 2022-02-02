@@ -1,0 +1,16 @@
+<div class="admin__field">
+    <label class="admin__field-label">
+        <span translate="'Form'"></span>
+    </label>
+    <div class="admin__field-control">
+        <div class="pagebuilder-block-chooser">
+            <div if="$data.errorMessage" text="$data.errorMessage"></div>
+            <div if="$data.meta().name" text="$data.meta().name" class="block-title"></div>
+            <div ifnot="$data.meta().name || $data.errorMessage()" class="block-title" translate="'Not Selected'"></div>
+
+            <div ko-scope="getButton()" class="chooser-button">
+                <render/>
+            </div>
+        </div>
+    </div>
+</div>

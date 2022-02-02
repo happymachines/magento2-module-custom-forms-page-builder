@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- UI listing grid configuration -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="pagebuilder_custom_form_select_grid_data_source" xsi:type="string">HappyMachines\CustomForms\Model\ResourceModel\Form\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\PageBuilder\Model\Stage\RendererPool">
+        <arguments>
+            <argument name="renderers" xsi:type="array">
+                <item name="custom-form" xsi:type="object">Magento\PageBuilder\Model\Stage\Renderer\WidgetDirective</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

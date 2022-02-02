@@ -1,0 +1,24 @@
+.icon-pagebuilder-form {
+    display: inline-block;
+    background-image: url('@{baseDir}HappyMachines_CustomFormsPageBuilder/css/images/content-type/custom-form/appearance/icon-pagebuilder-form.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.pagebuilder-content-type {
+    [data-content-type='custom-form'] {
+        .pagebuilder-placeholder {
+            align-items: center;
+            background-color: @color-gray98;
+            display: flex;
+            justify-content: center;
+            min-height: 100px;
+
+            .placeholder-text {
+                color: @color-gray65-lighten;
+                font-size: 20px;
+                font-weight: lighter;
+            }
+        }
+    }
+}

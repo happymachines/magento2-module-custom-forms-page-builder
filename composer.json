@@ -1,0 +1,21 @@
+{
+    "name": "happymachines/magento2-module-custom-forms-page-builder",
+    "description": "Magento 2 custom form page builder component",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=7.3",
+        "magento/framework": ">=103"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "HappyMachines\\CustomFormsPageBuilder\\": ""
+        }
+    }
+}
